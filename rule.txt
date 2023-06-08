@@ -1,0 +1,12 @@
+Here are the list of commands that you can play with:
+
+1. CREATE
+2. INSERT
+3. SELECT 
+4. UPDATE
+5. DELETE
+6. DROP
+
+*Note: (only WHERE clause is the only working clause for now)
+
+Further updates will be notified as they are made.
