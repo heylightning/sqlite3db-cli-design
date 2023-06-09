@@ -6,8 +6,7 @@ Here are the list of commands that you can play with:
 4. UPDATE
 5. DELETE
 6. DROP
-
-*Note: (Syntax Definations are case-sensitive.)
+7. EXIT
 
 Syntax Definations:
 
@@ -57,11 +56,40 @@ WHERE <column1> = <value1>;
 $>>> DROP <table-name>;
 (This will drop the table inside the seleted database.)
 
+7. EXIT
+$>>> EXIT;
+(This will exit the terminal.)
+
 The main controller cursor will look like this:
 
 heylightning/sqlite3db-cli-design (experiX)
 $>>>
 
 Here, (experiX) is representing that it is the primary database that has been selected.
+
+Here is the description of experiX:
+
+It has only 1 table (experiment)
+(
+    fname text,
+    lname text, 
+    email text,
+    pnumber number
+)
+This table has following values:
+(1, 'John', 'Elder', 'john@gmail.com', 9874563929)
+(2, 'Bob', 'Brown', 'bob@brown.com', 393925020)
+(3, 'Mary', 'Lisa', 'mary@lisa.com', 2847294729)
+(4, 'Arun', 'Singh', 'arun@singh.com', 9382927472)
+(5, 'Larry', 'Page', 'larry@page.com', 4829482835)
+(10, 'Rohan', 'Mohan', 'rohan@mohan.com', 3728902826)
+(11, 'Ansh', 'Mahajan', 'ansh@mahajan', 9875284724)
+(12, 'Lorde', 'Stupid', 'lorde@stupid.com', 9274629424)
+(13, 'Issac', 'Newton', 'issac@newton.com', 986253827)
+(14, 'Yash', 'Garg', 'yash@garg.com', 2749272638)
+
+Here, (1,2,3,4,5,...14) are rowid and this is considered as primary key.
+
+More tables can be created ahead.
 
 Further updates will be notified as they are made.
