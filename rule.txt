@@ -1,31 +1,17 @@
 Here are the list of commands that you can play with:
 
-1. SHOW
-2. CREATE
-3. INSERT
-4. SELECT 
-5. UPDATE
-6. DELETE
-7. DROP
+1. CREATE
+2. INSERT
+3. SELECT 
+4. UPDATE
+5. DELETE
+6. DROP
 
 *Note: (Syntax Definations are case-sensitive.)
 
 Syntax Definations:
 
-1. SHOW
-$>>> SHOW DATABASES;
-(This will show all the databases present in the system. Currently, we have only experiX.db inside our system!)
-
-$>>> CONNECT <name-of-database.db>;
-(This will set the <name-of-database.db> as the primary database. By default experiX.db will be the primary dataset.)
-
-$>>> SHOW TABLES;
-(Once the database is selected, we can display the number of tables that particular database contains in it.)
-
-2. CREATE
-$>>> CREATE DATABASE <name-of-database.db>;
-(This will create the <name-of-database.db> in the system.)
-
+1. CREATE
 $>>> CREATE TABLE <table-name>
 (
     <column1> <datatype>,
@@ -36,12 +22,12 @@ $>>> CREATE TABLE <table-name>
 );
 (This will help us to create a table inside a database.)
 
-3. INSERT
+2. INSERT
 $>>> INSERT INTO <table-name>
 VALUES ("value1", "value2", "value3", ...);
 (This will help us to insert values in the table.)
 
-4. SELECT 
+3. SELECT 
 $>>> SELECT * FROM <table-name>;
 (For now we don't have clause compatibility in SELECT query (only WHERE is compatible.). Probably be available in Version 1.0.1. This will help us to display all the values in the database.)
 
@@ -56,24 +42,20 @@ $>>> SELECT ONE FROM <table-name>
 WHERE <column1> = <value1>;
 (WHERE clause will work with ONE as well.)
 
-5. UPDATE
+4. UPDATE
 $>>> UPDATE <table-name>
 SET <column1> = <value1>
 WHERE <column2> = <value2>;
 (This is how we can integrate UPDATE query into our system.)
 
-6. DELETE
+5. DELETE
 $>>> DELETE FROM <table-name>
 WHERE <column1> = <value1>;
 (This is how we can integrate DELETE query into our system.)
 
-7. DROP
+6. DROP
 $>>> DROP <table-name>;
 (This will drop the table inside the seleted database.)
-
-$>>> DROP <name-of-database.db>;
-(This will drop the entire database from the system.)
-
 
 The main controller cursor will look like this:
 
