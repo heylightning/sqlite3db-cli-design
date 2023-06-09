@@ -30,16 +30,9 @@ VALUES ("value1", "value2", "value3", ...);
 $>>> SELECT * FROM <table-name>;
 (For now we don't have clause compatibility in SELECT query (only WHERE is compatible.). Probably be available in Version 1.0.1. This will help us to display all the values in the database.)
 
-$>>> SELECT ONE FROM <table-name>;
-(This will display the first value in the table.)
-
 $>>> SELECT * FROM <table-name>
 WHERE <column1> = <value1>;
 (This is how we can integrate where clause compatibility into our system.)
-
-$>>> SELECT ONE FROM <table-name>
-WHERE <column1> = <value1>;
-(WHERE clause will work with ONE as well.)
 
 4. UPDATE
 $>>> UPDATE <table-name>
@@ -53,7 +46,7 @@ WHERE <column1> = <value1>;
 (This is how we can integrate DELETE query into our system.)
 
 6. DROP
-$>>> DROP <table-name>;
+$>>> DROP TABLE <table-name>;
 (This will drop the table inside the seleted database.)
 
 7. EXIT
